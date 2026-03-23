@@ -8,7 +8,7 @@ export const api = axios.create({
 
 
 export async function sendmsg({ message,chatId }){
-    const response = await api.post("//api/chats/message",{
+    const response = await api.post("/api/chats/message",{
         message,
         chat: chatId  
     });
