@@ -836,7 +836,7 @@ export default function Register() {
 
       `}</style>
 
-      <div className="login-root">
+  <div className="login-root">
         {/* glow blobs */}
         <div className="blob blob-teal" />
         <div className="blob blob-blue" />
@@ -854,7 +854,6 @@ export default function Register() {
               <br />
               account
             </h1>
-            {loading ? "Creating account…" : "Create Account"}
             <p className="form-sub">Continue where you left off</p>
 
             {error && <div className="error-msg">{error}</div>}
@@ -902,7 +901,6 @@ export default function Register() {
                 />
               </div>
 
-              <p className="form-sub">Join and start building today</p>
 
               <button className="submit-btn" type="submit" disabled={loading}>
                 {loading && <span className="spinner" />}
