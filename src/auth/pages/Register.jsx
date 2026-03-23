@@ -555,54 +555,6 @@ export default function Register() {
     };
   }, []);
 
-  if (registered) {
-    return (
-      <div className="login-root">
-        <div style={{ margin: "auto", zIndex: 2, padding: "24px" }}>
-          <div
-            className="form-card"
-            style={{ textAlign: "center", maxWidth: 380 }}
-          >
-            <div style={{ fontSize: 52, marginBottom: 16 }}>📧</div>
-            <p className="form-eyebrow">Almost there</p>
-            <h1 className="form-title">
-              Check your
-              <br />
-              inbox
-            </h1>
-            <p className="form-sub">
-              We sent a verification link to
-              <br />
-              <strong style={{ color: "#14b8a6" }}>{form.email}</strong>
-            </p>
-            <p
-              style={{
-                fontSize: 12,
-                color: "rgba(255,255,255,0.25)",
-                marginTop: 16,
-                lineHeight: 1.6,
-              }}
-            >
-              Click the link in the email to activate your account, then log in.
-            </p>
-            <a
-              href="/login"
-              className="submit-btn"
-              style={{
-                display: "block",
-                marginTop: 24,
-                textDecoration: "none",
-                textAlign: "center",
-              }}
-            >
-              Go to Login →
-            </a>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <>
 
