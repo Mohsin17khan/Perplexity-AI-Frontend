@@ -5,6 +5,7 @@ import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
 import * as CANNON from "cannon-es";
 import { useAuth } from "../hooks/useHook";
 import { useNavigate } from "react-router";
+import { SuccessModal } from "../../chat/components/SuccessModal";
 
 const keychainConfig = [
   {
@@ -604,6 +605,11 @@ export default function Register() {
 
   return (
     <>
+
+      {/* ← Show modal on top when registered */}
+    {registered && (
+      <SuccessModal onClose={() => navigate("/login")} />
+    )}
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
 
@@ -835,6 +841,8 @@ export default function Register() {
 }
 
       `}</style>
+
+
 
   <div className="login-root">
         {/* glow blobs */}
