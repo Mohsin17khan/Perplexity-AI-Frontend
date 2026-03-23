@@ -2,9 +2,11 @@ import axios from 'axios'
 
 
 export const api = axios.create({
-    baseURL:"http://localhost:3000/api/auth",
+    baseURL:"https://perplexity-backend-1-rcvm.onrender.com",
     withCredentials:true
 });
+
+
 
 
 export async function register({username, email, password }){
