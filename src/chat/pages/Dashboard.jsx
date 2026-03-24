@@ -131,8 +131,8 @@ export default function Dashboard() {
 
   <br /><br />
 
-  <span className="block font-semibold text-blue-400">
-    This project was built under the guidance of <span className="text-[14px] text-blue-300">Ankur Prajapati</span>  , and I would like to express my sincere thanks to <span className="text-[14px] ">Sheryians Coding School</span>  for their valuable learning resources and support throughout the journey.
+  <span className="block font-semibold text-blue-600">
+    This project was built under the guidance of <span className="text-[17px] text-blue-300">Ankur Prajapati</span>  , and I would like to express my sincere thanks to <span className="text-[17px] text-blue-300 ">Sheryians Coding School</span>  for their valuable learning resources and support throughout the journey.
   </span>
 </p>
           
