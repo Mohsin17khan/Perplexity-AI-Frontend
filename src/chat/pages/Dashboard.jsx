@@ -114,12 +114,28 @@ export default function Dashboard() {
               <div className="p-4 sm:p-6 text-[var(--text-primary)]">
                 <h1 className="text-xl sm:text-2xl font-bold mb-4">About This Project</h1>
                 <p className="text-sm leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum.
+                  <p className="text-sm leading-relaxed space-y-3">
+  This project is a modern, interactive web application designed to simulate a real-world operating system experience inside the browser. It allows users to open, close, resize, and manage multiple application windows just like a desktop environment, providing a highly engaging and dynamic UI.
+
+  <br /><br />
+
+  The core features of this project include window management functionality such as drag, resize, minimize, and close actions. Each window behaves independently, giving users a realistic multitasking experience. The UI is fully responsive and optimized for different screen sizes, ensuring smooth performance across devices.
+
+  <br /><br />
+
+  The project also focuses on clean design and smooth user interactions. Animations and transitions are implemented to enhance the overall user experience, making the interface feel alive and intuitive. The structure of the code is modular and scalable, making it easy to maintain and extend with additional features in the future.
+
+  <br /><br />
+
+  This project demonstrates practical implementation of advanced frontend concepts including state management, component reusability, and dynamic rendering. It reflects a strong understanding of how real-world applications handle multiple UI elements simultaneously.
+
+  <br /><br />
+
+  <span className="block font-semibold text-blue-400">
+    This project was built under the guidance of <span className="text-[14px] text-blue-300">Ankur Prajapati</span>  , and I would like to express my sincere thanks to <span className="text-[14px] ">Sheryians Coding School</span>  for their valuable learning resources and support throughout the journey.
+  </span>
+</p>
+          
                 </p>
                 <button
                   onClick={() => setAbout(false)}
