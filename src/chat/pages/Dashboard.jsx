@@ -67,7 +67,8 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="flex h-screen overflow-hidden bg-[var(--bg-base)] relative">
+    <div className="flex overflow-hidden bg-[var(--bg-base)] relative" 
+     style={{ height: '100dvh' }}>
 
       {/* ── Mobile overlay backdrop ──────────────────────────────────────── */}
       {sidebarOpen && (
@@ -102,7 +103,7 @@ export default function Dashboard() {
         <Header onMenuClick={() => setSidebarOpen(true)} />
 
         {/* ── Scrollable body ─────────────────────────────────────────── */}
-        <div className="flex-1 h-screen w-full overflow-y-auto overflow-x-hidden relative">
+        <div className="flex-1 w-full overflow-y-auto overflow-x-hidden relative">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
             <BlurCircle top="-100px" left="-170px" color="59, 130, 246" />
 
