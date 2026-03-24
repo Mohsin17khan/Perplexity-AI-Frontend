@@ -7,15 +7,6 @@ export const api = axios.create({
 });
 
 
-api.interceptors.request.use((config) => {
-    const token = localStorage.getItem("token");
-    if (token) {
-        config.headers.Authorization = `Bearer ${token}`;
-    }
-    return config;
-});
-
-
 
 
 export async function register({username, email, password }){
