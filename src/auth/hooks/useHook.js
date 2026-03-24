@@ -25,6 +25,7 @@ export function useAuth(){
         try {
             dispatch(setLoading(true));
             const data = await login({username, password});
+             localStorage.setItem("token", data.token);  //
             dispatch(setUser(data.user))
         } catch (error) {
              dispatch(setError(error.response?.data?.message || "Login Failed "))
@@ -51,6 +52,7 @@ export function useAuth(){
     async function handleLogout(){
         try {
             const data = await logout();
+            localStorage.removeItem("token"); //
         } catch (error) {
           dispatch(setError(error.response?.data?.message || "logout Failed "))  
         }
