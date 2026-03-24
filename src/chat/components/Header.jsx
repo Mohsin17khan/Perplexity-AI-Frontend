@@ -15,7 +15,12 @@ const Header = ({ onMenuClick }) => {   // ← accept prop
   };
 
   return (
-    <header className="flex items-center justify-between px-4 sm:px-6 py-3 border-b border-[var(--border-subtle)] flex-shrink-0">
+    <header
+      style={{
+       paddingTop: "max(12px, env(safe-area-inset-top))",  // ← iOS notch fix
+      }}
+      // ye kara 
+     className="flex items-center justify-between px-4 sm:px-6 py-3 border-b border-[var(--border-subtle)] flex-shrink-0">
       <div className="flex items-center gap-3">
 
         {/* ← Hamburger for mobile */}

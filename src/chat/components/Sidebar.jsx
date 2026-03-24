@@ -31,7 +31,13 @@ export function Sidebar({ active, onSelect, setAbout }) {
   };
 
   return (
-    <aside className="w-52 flex-shrink-0 flex flex-col bg-[var(--bg-surface)] border-r border-[var(--border-subtle)] py-3 px-2 h-full overflow-y-auto">
+    <aside
+    style={{
+        paddingTop: "max(12px, env(safe-area-inset-top))", 
+    }}
+    // ye  
+    
+    className="w-52 flex-shrink-0 flex flex-col bg-[var(--bg-surface)] border-r border-[var(--border-subtle)] py-3 px-2 h-full overflow-y-auto">
       {/* Logo */}
       <div className="flex items-center justify-between px-2 mb-3">
         <div className="flex items-center gap-2">

@@ -68,7 +68,9 @@ export default function Dashboard() {
 
   return (
     <div className="flex overflow-hidden bg-[var(--bg-base)] relative" 
-     style={{ height: '100dvh' }}>
+     style={{ height: '100dvh'  ,
+       overflow: "hidden", // ye
+       paddingTop: "env(safe-area-inset-top)",}}>
 
       {/* ── Mobile overlay backdrop ──────────────────────────────────────── */}
       {sidebarOpen && (
